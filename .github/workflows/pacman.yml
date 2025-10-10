@@ -1,19 +1,20 @@
 name: Generate Pacman Contribution Graph
+
 on:
-  schedule:
-    - cron: "0 0 * * *" # update setiap hari
-  workflow_dispatch:
+  schedule: # otomatis jalan tiap hari
+    - cron: "0 0 * * *"
+  workflow_dispatch: # bisa dijalankan manual juga
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
       - name: Generate Pacman Graph
-        uses: mauriciopoppe/github-contribution-grid-snake@main
+        uses: Platane/snk@v3
         with:
           github_user_name: AdrianTriSetiawan
-          output_path: dist/pacman-contribution-graph.svg
+          outputs: |
+            dist/pacman.svg
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v3
         with:
