@@ -11,7 +11,15 @@
 
 ###
 
-<img align="right" height="150" src="https://media.giphy.com/media/NnMH7LDpZTPZS/giphy.gif" alt="rain scenery gif" />
+<div align="center">
+  <a href="https://giphy.com/gifs/raining-scenery-NnMH7LDpZTPZS" target="_blank">
+    <img src="https://media.giphy.com/media/NnMH7LDpZTPZS/giphy.gif" 
+         alt="rain scenery banner" 
+         width="100%" 
+         style="border-radius: 10px; margin-top: 20px;" />
+  </a>
+</div>
+
 
 
 ###
